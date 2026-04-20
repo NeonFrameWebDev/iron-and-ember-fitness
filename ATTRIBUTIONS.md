@@ -4,7 +4,26 @@ Iron & Ember Fitness is a **fictional** gym built as a portfolio showcase for Ne
 
 All photography is sourced from [Unsplash](https://unsplash.com) under the [Unsplash License](https://unsplash.com/license), which permits free use for commercial and non-commercial purposes without attribution. We list credits here anyway as a courtesy to the photographers.
 
-Image source URLs and photographer credits will be populated during asset acquisition. The manifest at `/tmp/ie_images/manifest.txt` contains the source information for each image included in the `images/` folder.
+Each image in `/images/` is a crop of an Unsplash photograph. Source photo ID is embedded in the processing pipeline mapping:
+
+| Site filename | Unsplash photo ID | Role |
+| ------------- | ----------------- | ---- |
+| hero-main.webp / .jpg / -800.webp | Xb1d-N04Quc | Hero, hands gripping a barbell, close up |
+| manifesto.webp / .jpg | qbDMWn0FRPc | Manifesto section, wide black and white gym interior |
+| moment-01.webp | zfPOelmDc-M | Moment 01, hand on bar, set up |
+| moment-02.webp | JWK2H-2qz1Y | Moment 02, dumbbell with chalk dust |
+| moment-03.webp | BoWp9uOVY7g | Moment 03, coach cueing a squatter |
+| moment-04.webp | GNWUPn44-eg | Moment 04, wide gym floor |
+| program-powerlifting.webp | diR3QPkc-xg | Program, bent over row in red |
+| program-olympic.webp | oBWyxIcZ71E | Program, overhead snatch under judge |
+| program-functional.webp | U5kQvbQWoG0 | Program, battle ropes moody |
+| program-open-gym.webp | 8DcwvlVXIVw | Program, row of dumbbells |
+| coach-carlos.webp / .jpg | 7oPvdWF9gi0 | Coach portrait |
+| coach-priya.webp / .jpg | shr1Zgtt8mI | Coach portrait |
+| coach-big-t.webp / .jpg | AcJBqClio3g | Coach portrait |
+| coach-ren.webp / .jpg | Jx81mPHWnts | Coach portrait |
+
+Each photo is viewable at `https://unsplash.com/photos/<photo-id>`. All free under the Unsplash License.
 
 ## Fonts
 
