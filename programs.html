@@ -5,15 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0A0A0A">
 <title>Programs, Iron &amp; Ember Fitness, Austin TX</title>
-<meta name="description" content="Powerlifting, Olympic lifting, functional fitness, open gym. Every session is coached and every cycle is programmed. See the weekly schedule.">
+<meta name="description" content="Four training programs at Iron and Ember in Austin. Powerlifting, Olympic lifting, functional fitness, open gym. Every session coached, every cycle periodized. Full weekly schedule inside.">
+<meta name="keywords" content="powerlifting program Austin, Olympic weightlifting class Austin, functional fitness East Austin, open gym Austin, periodized strength training, barbell coaching, CSCS coach">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="geo.region" content="US-TX">
+<meta name="geo.placename" content="Austin, Texas">
 <link rel="canonical" href="https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html">
+<link rel="alternate" hreflang="en-us" href="https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Programs, Iron &amp; Ember Fitness">
 <meta property="og:description" content="Four programs, one gym. Powerlifting, Olympic lifting, functional fitness, open gym.">
 <meta property="og:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta property="og:image:alt" content="Iron and Ember Fitness, Built Different">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html">
 <meta property="og:site_name" content="Iron &amp; Ember Fitness">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta name="twitter:image:alt" content="Iron and Ember Fitness Programs">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -28,6 +39,12 @@
 <body class="is-programs">
 
 <div class="progress" id="progress"></div>
+
+<aside class="rail" aria-hidden="true">
+  <span class="rail__mark">Iron<span class="slash">/</span>Ember</span>
+  <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
+  <span class="rail__meta">Programs</span>
+</aside>
 
 <nav class="nav" id="nav" aria-label="Primary">
   <div class="nav__inner">
@@ -119,11 +136,14 @@
   </div>
 </section>
 
+<div class="slash-divider slash-divider--to-ink" aria-hidden="true"><span class="slash-divider__mark">Weekly Load</span></div>
+
 <section class="section section--ink" id="schedule">
+  <span class="section__bignum" aria-hidden="true">WK</span>
   <div class="wrap">
     <div class="section-head rise">
       <div>
-        <span class="section-head__label">Weekly / At a glance</span>
+        <span class="section-head__tag">At a glance</span>
         <h2 class="section__heading" data-split>The <span class="ember">schedule.</span></h2>
       </div>
       <p class="section__intro">Coach-led sessions run Monday to Saturday. Open gym fills the rest of the operating hours.</p>
@@ -252,6 +272,19 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/"},
     {"@type": "ListItem", "position": 2, "name": "Programs", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Iron & Ember Fitness, Programs",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "item": {"@type": "ExercisePlan", "name": "Powerlifting", "description": "Twelve week periodized cycles built around squat, bench, and deadlift. Linear progression for new lifters, block periodization for experienced lifters.", "exerciseType": "Powerlifting", "activityDuration": "PT60M"}},
+    {"@type": "ListItem", "position": 2, "item": {"@type": "ExercisePlan", "name": "Olympic Lifting", "description": "Snatch and clean and jerk, taught the long way. Position drilled before loading.", "exerciseType": "Olympic Weightlifting", "activityDuration": "PT60M"}},
+    {"@type": "ListItem", "position": 3, "item": {"@type": "ExercisePlan", "name": "Functional Fitness", "description": "Forty five minute conditioning circuits with kettlebells, battle ropes, sleds, bodyweight.", "exerciseType": "Conditioning", "activityDuration": "PT45M"}},
+    {"@type": "ListItem", "position": 4, "item": {"@type": "ExercisePlan", "name": "Open Gym", "description": "Full access to racks, platforms, dumbbells to 150 pounds. Self coached or with optional programming.", "exerciseType": "Strength Training"}}
   ]
 }
 </script>

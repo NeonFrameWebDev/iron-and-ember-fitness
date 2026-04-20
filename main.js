@@ -96,12 +96,15 @@
      ===================================== */
   var progress = document.getElementById('progress');
   var nav = document.getElementById('nav');
+  var railFill = document.getElementById('railFill');
+  var navSlash = document.querySelector('.nav__mark .slash');
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
-    if (progress) {
-      var docH = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-      progress.style.width = (y / docH * 100) + '%';
-    }
+    var docH = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    var pct = Math.min(100, Math.max(0, y / docH * 100));
+    if (progress) progress.style.width = pct + '%';
+    if (railFill) railFill.style.height = pct + '%';
+    if (navSlash) navSlash.style.transform = 'translateY(-0.05em) rotate(' + (y * 0.25) + 'deg)';
     if (nav) {
       if (y > 24) nav.classList.add('is-scrolled');
       else nav.classList.remove('is-scrolled');
