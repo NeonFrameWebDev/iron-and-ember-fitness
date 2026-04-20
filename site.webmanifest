@@ -1,0 +1,21 @@
+{
+  "name": "Iron & Ember Fitness",
+  "short_name": "Iron/Ember",
+  "description": "Strength and conditioning gym in East Austin, Texas.",
+  "start_url": "/iron-and-ember-fitness/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

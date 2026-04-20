@@ -1,0 +1,5 @@
+_legacy/
+images_backup/
+.DS_Store
+*.log
+node_modules/

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Iron &amp; Ember Fitness, Strength &amp; Conditioning, Austin TX</title>
+<meta name="description" content="A no-nonsense strength and conditioning gym in East Austin. Powerlifting, Olympic lifting, functional fitness. Twelve platforms, four coaches on the floor, and iron everywhere.">
+<link rel="canonical" href="https://neonframewebdev.github.io/iron-and-ember-fitness/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Iron &amp; Ember Fitness, Austin TX">
+<meta property="og:description" content="Powerlifting, Olympic lifting, functional fitness. Twelve platforms. Four coaches on the floor. Built for people who came to lift.">
+<meta property="og:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://neonframewebdev.github.io/iron-and-ember-fitness/">
+<meta property="og:site_name" content="Iron &amp; Ember Fitness">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Iron &amp; Ember Fitness, Austin TX">
+<meta name="twitter:description" content="Powerlifting, Olympic lifting, functional fitness. Twelve platforms. Four coaches. Built different.">
+<meta name="twitter:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" as="image" href="images/hero-main-800.webp" fetchpriority="high" type="image/webp" media="(max-width: 899px)">
+<link rel="preload" as="image" href="images/hero-main.webp" fetchpriority="high" type="image/webp" media="(min-width: 900px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-home is-locked">
+
+<div class="loader" id="loader">
+  <div class="loader__mark">I<span class="slash">/</span>E</div>
+  <div class="loader__count">00 / 100</div>
+  <div class="loader__bar"></div>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">Iron<span class="slash">/</span>Ember</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <div class="menu__inner">
+    <ul class="menu__links">
+      <li><a href="index.html" class="is-active">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu__contact">
+      <p class="menu__meta"><strong>Address</strong>2407 E 7th St<br>Austin, TX 78702</p>
+      <p class="menu__meta"><strong>Hours</strong>Mon to Fri, 5 AM to 9 PM<br>Sat, 7 AM to 2 PM<br>Sun, closed</p>
+      <p class="menu__meta"><strong>Phone</strong><a href="tel:+15125551247">(512) 555-1247</a></p>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+
+<header class="hero" id="hero">
+  <div class="hero__bg" style="background-image: url('images/hero-main-800.webp')" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="hero__meta">
+      <span>Est. 2019</span>
+      <span>2407 E 7th St</span>
+      <span>Austin, TX</span>
+    </p>
+    <div class="hero__mega">
+      <span class="hero__word hero__word--built">BUILT</span>
+      <span class="hero__word hero__word--diff">DIFFERENT.</span>
+    </div>
+    <div class="hero__lower">
+      <p class="hero__sub">No mirrors, no playlists, no gimmicks. Just <strong>iron, chalk, and people who came to get stronger.</strong></p>
+      <div class="hero__ctas">
+        <a href="programs.html" class="btn btn--ember">See Programs <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <a href="contact.html" class="btn btn--outline">Drop In</a>
+      </div>
+    </div>
+    <p class="hero__scroll" aria-hidden="true"><span class="hero__scroll__line"></span>Scroll</p>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">Deadlift</span>
+    <span class="marquee__item">Snatch</span>
+    <span class="marquee__item">Clean</span>
+    <span class="marquee__item">Jerk</span>
+    <span class="marquee__item">Squat</span>
+    <span class="marquee__item">Bench</span>
+    <span class="marquee__item">Front Squat</span>
+    <span class="marquee__item">Chalk</span>
+  </div>
+</div>
+
+<section class="section section--ink" id="manifesto">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="section-head__label">No. 01 / Why We Built It</span>
+        <h2 class="section__heading rise" data-split>A gym for people who came to <span class="ember">lift.</span></h2>
+      </div>
+      <p class="section__intro rise">Austin has plenty of places to post a selfie. Iron and Ember is not one of them.</p>
+    </div>
+    <div class="manifesto">
+      <div class="manifesto__copy rise">
+        <p>Carlos Medina opened Iron and Ember in 2019 with four squat racks, a platform, and a stopwatch. He was done with gyms that cared more about playlists than programming.</p>
+        <p>Today the room has twelve platforms, a full Olympic area, and a bench of coaches who live on the floor. Programming is periodized. Every member gets greeted by name. Nobody's teaching you to dance.</p>
+        <div class="manifesto__stats">
+          <div class="manifesto__stat"><span class="manifesto__stat__num">2019</span><span class="manifesto__stat__label">Opened</span></div>
+          <div class="manifesto__stat"><span class="manifesto__stat__num">12</span><span class="manifesto__stat__label">Platforms</span></div>
+          <div class="manifesto__stat"><span class="manifesto__stat__num">4</span><span class="manifesto__stat__label">Head Coaches</span></div>
+        </div>
+      </div>
+      <figure class="manifesto__photo rise">
+        <picture>
+          <source srcset="images/manifesto.webp" type="image/webp">
+          <img src="images/manifesto.jpg" alt="Industrial strength gym interior with weightlifting platforms and steel plates" loading="lazy" width="900" height="1125" decoding="async">
+        </picture>
+        <figcaption class="manifesto__photo__tag">The floor, 2407 E 7th</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="moments" aria-label="On the floor">
+  <div class="moments__pin">
+    <div class="moments__track">
+      <figure class="moment">
+        <img src="images/moment-01.webp" alt="Hands chalked up on a loaded barbell, close-up" loading="lazy" width="900" height="1200" decoding="async">
+        <figcaption class="moment__caption"><h3>Set up.</h3><span class="moment__caption__index">01 / 04</span></figcaption>
+      </figure>
+      <figure class="moment">
+        <img src="images/moment-02.webp" alt="Chalk dust rising over a bowl in the lifting area" loading="lazy" width="900" height="1200" decoding="async">
+        <figcaption class="moment__caption"><h3>Chalk up.</h3><span class="moment__caption__index">02 / 04</span></figcaption>
+      </figure>
+      <figure class="moment">
+        <img src="images/moment-03.webp" alt="A coach cueing an athlete through a squat" loading="lazy" width="900" height="1200" decoding="async">
+        <figcaption class="moment__caption"><h3>Coach up.</h3><span class="moment__caption__index">03 / 04</span></figcaption>
+      </figure>
+      <figure class="moment">
+        <img src="images/moment-04.webp" alt="Wide view of the gym floor with multiple athletes training" loading="lazy" width="900" height="1200" decoding="async">
+        <figcaption class="moment__caption"><h3>Show up.</h3><span class="moment__caption__index">04 / 04</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--smoke" id="programs">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div>
+        <span class="section-head__label">No. 02 / Programs</span>
+        <h2 class="section__heading" data-split>Train what <span class="ember">matters.</span></h2>
+      </div>
+      <p class="section__intro">Pick a lane or mix them. Every session is coached, every cycle is planned, and every rep is yours.</p>
+    </div>
+  </div>
+  <div class="programs-list">
+    <a class="program-strip" href="programs.html#powerlifting">
+      <span class="program-strip__num">01</span>
+      <div>
+        <h3 class="program-strip__name">Powerlifting</h3>
+        <p class="program-strip__desc">Squat, bench, deadlift. Periodized for PRs. Tue and Thu, 6 AM and 5:30 PM.</p>
+      </div>
+      <span class="program-strip__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="program-strip" href="programs.html#olympic">
+      <span class="program-strip__num">02</span>
+      <div>
+        <h3 class="program-strip__name">Olympic Lifting</h3>
+        <p class="program-strip__desc">Snatch and clean and jerk. Technique over ego. Mon, Wed, Fri, 7 AM.</p>
+      </div>
+      <span class="program-strip__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="program-strip" href="programs.html#functional">
+      <span class="program-strip__num">03</span>
+      <div>
+        <h3 class="program-strip__name">Functional Fitness</h3>
+        <p class="program-strip__desc">Kettlebells, rope, bodyweight. Forty five minutes, no filler. Daily, multiple times.</p>
+      </div>
+      <span class="program-strip__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="program-strip" href="programs.html#open">
+      <span class="program-strip__num">04</span>
+      <div>
+        <h3 class="program-strip__name">Open Gym</h3>
+        <p class="program-strip__desc">Full rack access, platforms, dumbbells to 150. Your programming, your pace.</p>
+      </div>
+      <span class="program-strip__arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<section class="stats" id="stats" aria-label="By the numbers">
+  <div class="stat">
+    <span class="stat__num" data-target="5000" data-suffix="+">0</span>
+    <span class="stat__label">Members Trained</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num" data-target="12" data-suffix="">0</span>
+    <span class="stat__label">Platforms</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num" data-target="600" data-suffix="lb">0</span>
+    <span class="stat__label">House Deadlift</span>
+  </div>
+  <div class="stat">
+    <span class="stat__num" data-target="4" data-suffix="AM">0</span>
+    <span class="stat__label">Earliest Session</span>
+  </div>
+</section>
+
+<section class="section section--ink" id="coaches-teaser">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div>
+        <span class="section-head__label">No. 03 / The Coaches</span>
+        <h2 class="section__heading" data-split>On the floor with <span class="ember">you.</span></h2>
+      </div>
+      <p class="section__intro">Four coaches, four disciplines. Every session is coached. Every PR gets witnessed.</p>
+    </div>
+    <div class="coaches-grid rise">
+      <a href="coaches.html#carlos" class="coach-card">
+        <img src="images/coach-carlos.webp" alt="Coach Carlos Medina, head coach" loading="lazy" width="600" height="800" decoding="async">
+        <div class="coach-card__plate">
+          <span class="coach-card__role">Head Coach, CSCS</span>
+          <h3 class="coach-card__name">Carlos Medina</h3>
+        </div>
+      </a>
+      <a href="coaches.html#priya" class="coach-card">
+        <img src="images/coach-priya.webp" alt="Coach Priya Desai, nutrition and programming" loading="lazy" width="600" height="800" decoding="async">
+        <div class="coach-card__plate">
+          <span class="coach-card__role">Programming, MS</span>
+          <h3 class="coach-card__name">Priya Desai</h3>
+        </div>
+      </a>
+      <a href="coaches.html#big-t" class="coach-card">
+        <img src="images/coach-big-t.webp" alt="Coach Big T Nowak, powerlifting" loading="lazy" width="600" height="800" decoding="async">
+        <div class="coach-card__plate">
+          <span class="coach-card__role">Powerlifting</span>
+          <h3 class="coach-card__name">Big T Nowak</h3>
+        </div>
+      </a>
+      <a href="coaches.html#ren" class="coach-card">
+        <img src="images/coach-ren.webp" alt="Coach Ren Jackson, Olympic lifting" loading="lazy" width="600" height="800" decoding="async">
+        <div class="coach-card__plate">
+          <span class="coach-card__role">Olympic, USAW L2</span>
+          <h3 class="coach-card__name">Ren Jackson</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="testi" aria-label="What members say">
+  <div class="wrap">
+    <span class="section-head__label" style="margin-bottom:2rem;display:flex;">No. 04 / Members</span>
+    <div class="testi__stage">
+      <article class="testi__slide">
+        <p class="testi__quote">"First gym I have been in that feels like a team. Priya handed me a cycle. Twelve weeks later I added 65 pounds to my squat. No hype, just math."</p>
+        <p class="testi__who"><strong>Dani R.</strong>, member since 2022</p>
+      </article>
+      <article class="testi__slide">
+        <p class="testi__quote">"The coaches actually coach. Ren took one look at my snatch and told me to stop yanking. That was six months ago. I competed last weekend."</p>
+        <p class="testi__who"><strong>Marcus H.</strong>, member since 2023</p>
+      </article>
+      <article class="testi__slide">
+        <p class="testi__quote">"I came in because I was bored with globo gyms. I stayed because everyone here wants you to lift more than you did last week."</p>
+        <p class="testi__who"><strong>Sam K.</strong>, member since 2021</p>
+      </article>
+    </div>
+    <div class="testi__nav" role="tablist" aria-label="Testimonial navigation">
+      <button class="testi__dot is-active" aria-label="Show testimonial 1"></button>
+      <button class="testi__dot" aria-label="Show testimonial 2"></button>
+      <button class="testi__dot" aria-label="Show testimonial 3"></button>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="wrap">
+    <p class="cta__kicker">No. 05 / Drop In</p>
+    <h2 class="cta__heading">Drop in. Lift heavy. Leave stronger.</h2>
+    <p class="cta__sub">Twenty five bucks for a full session. No membership, no commitment. Show up, train, decide.</p>
+    <a href="contact.html" class="btn btn--paper">Book a Drop In <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <span class="foot__mark">Iron<span class="slash">/</span>Ember</span>
+      <p>A no-nonsense strength and conditioning gym on East 7th. Open seven days most weeks, except Sundays which are for leaving you alone.</p>
+    </div>
+    <div class="foot__col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h4>Visit</h4>
+      <ul>
+        <li>2407 E 7th St</li>
+        <li>Austin, TX 78702</li>
+        <li><a href="tel:+15125551247">(512) 555-1247</a></li>
+        <li><a href="mailto:info@ironandember.com">info@ironandember.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col foot__newsletter">
+      <h4>Lift Notes</h4>
+      <form action="mailto:info@ironandember.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>&copy; 2026 Iron &amp; Ember Fitness</span>
+    <span>Site by <a href="https://neonframewebdev.com" target="_blank" rel="noopener">NeonFrame</a></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HealthClub"],
+  "@id": "https://neonframewebdev.github.io/iron-and-ember-fitness/#business",
+  "name": "Iron & Ember Fitness",
+  "alternateName": "Iron and Ember",
+  "description": "Strength and conditioning gym in East Austin. Powerlifting, Olympic lifting, functional fitness. Twelve platforms and four coaches on the floor.",
+  "url": "https://neonframewebdev.github.io/iron-and-ember-fitness/",
+  "image": "https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg",
+  "telephone": "+1-512-555-1247",
+  "email": "info@ironandember.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2407 E 7th St",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78702",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "30.2615",
+    "longitude": "-97.7152"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:00", "closes": "21:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "14:00"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/ironandember/",
+    "https://www.facebook.com/ironandember/"
+  ]
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

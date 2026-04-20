@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Membership, Iron &amp; Ember Fitness, Austin TX</title>
+<meta name="description" content="Three tiers, no contracts. Drop in for twenty five. Twelve sessions a month for one eighty nine. Unlimited with programming for two forty nine.">
+<link rel="canonical" href="https://neonframewebdev.github.io/iron-and-ember-fitness/membership.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Membership, Iron &amp; Ember Fitness">
+<meta property="og:description" content="No contracts. No cancellation fees. Drop in, go monthly, or go unlimited.">
+<meta property="og:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta property="og:url" content="https://neonframewebdev.github.io/iron-and-ember-fitness/membership.html">
+<meta property="og:site_name" content="Iron &amp; Ember Fitness">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-membership">
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">Iron<span class="slash">/</span>Ember</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <div class="menu__inner">
+    <ul class="menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="membership.html" class="is-active">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu__contact">
+      <p class="menu__meta"><strong>Address</strong>2407 E 7th St<br>Austin, TX 78702</p>
+      <p class="menu__meta"><strong>Hours</strong>Mon to Fri, 5 AM to 9 PM<br>Sat, 7 AM to 2 PM<br>Sun, closed</p>
+      <p class="menu__meta"><strong>Phone</strong><a href="tel:+15125551247">(512) 555-1247</a></p>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+
+<header class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="images/manifesto.webp" alt="" width="1800" height="1200" fetchpriority="high">
+  </div>
+  <div class="page-hero__inner">
+    <nav class="page-hero__crumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span>Membership</span>
+    </nav>
+    <h1 class="page-hero__heading">No contracts. Just <span class="ember">train.</span></h1>
+    <p class="page-hero__sub">Three tiers. Switch any month. Cancel any month. No enrollment fees. No BS.</p>
+  </div>
+</header>
+
+<section class="section section--ink" id="tiers">
+  <div class="wrap">
+    <div class="pricing-grid">
+      <article class="price-card rise">
+        <p class="price-card__tier">Drop In</p>
+        <div class="price-card__price"><strong>$25</strong><span>per session</span></div>
+        <ul class="price-card__list">
+          <li>One full coached session</li>
+          <li>Use of all equipment</li>
+          <li>No waiver, no commitment</li>
+          <li class="is-excluded">Programming</li>
+          <li class="is-excluded">Priority booking</li>
+        </ul>
+        <a href="contact.html" class="btn btn--outline btn--block">Book a Drop In</a>
+      </article>
+
+      <article class="price-card rise">
+        <p class="price-card__tier">Monthly</p>
+        <div class="price-card__price"><strong>$189</strong><span>per month</span></div>
+        <ul class="price-card__list">
+          <li>Twelve coached sessions per month</li>
+          <li>Full open gym access</li>
+          <li>All programs available</li>
+          <li class="is-excluded">Programming consult</li>
+          <li class="is-excluded">Priority booking</li>
+        </ul>
+        <a href="contact.html" class="btn btn--outline btn--block">Start Monthly</a>
+      </article>
+
+      <article class="price-card price-card--featured rise">
+        <p class="price-card__tier">Unlimited</p>
+        <div class="price-card__price"><strong>$249</strong><span>per month</span></div>
+        <ul class="price-card__list">
+          <li>Unlimited coached sessions</li>
+          <li>Full open gym access</li>
+          <li>One free programming consult</li>
+          <li>Priority booking</li>
+          <li>Guest passes twice a month</li>
+        </ul>
+        <a href="contact.html" class="btn btn--ember btn--block">Go Unlimited</a>
+      </article>
+    </div>
+
+    <div class="pricing-table-wrap rise">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th class="pricing-table__feature">What you get</th>
+            <th>Drop In</th>
+            <th>Monthly</th>
+            <th class="pricing-table__hl">Unlimited</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Coached sessions</td><td>1</td><td>12 per month</td><td class="pricing-table__hl">Unlimited</td></tr>
+          <tr><td>Open gym access</td><td>Single visit</td><td>Included</td><td class="pricing-table__hl">Included</td></tr>
+          <tr><td>Programming consult</td><td>No</td><td>No</td><td class="pricing-table__hl">1 free</td></tr>
+          <tr><td>Priority booking</td><td>No</td><td>No</td><td class="pricing-table__hl">Yes</td></tr>
+          <tr><td>Guest passes</td><td>No</td><td>1 per month</td><td class="pricing-table__hl">2 per month</td></tr>
+          <tr><td>Locker access</td><td>No</td><td>Yes</td><td class="pricing-table__hl">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section section--smoke" id="faq">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div>
+        <span class="section-head__label">FAQ / The Basics</span>
+        <h2 class="section__heading" data-split>Questions we <span class="ember">hear.</span></h2>
+      </div>
+      <p class="section__intro">If your question is not here, call us. We pick up between sessions.</p>
+    </div>
+    <div class="faq">
+      <details class="faq__item">
+        <summary class="faq__q">How do I do a drop in? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Call us, email us, or show up ten minutes before any coached session. First time drop ins fill out a one page waiver. Twenty five bucks, cash or card. You can join any posted class.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Do I need experience? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">No. Coaches teach every movement before you load the bar. If you have been lifting for a while, bring your numbers. If this is your first barbell, we will start with PVC.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Can I cancel my membership? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Anytime, end of your current month. No cancellation fee. Email us or stop in. No phone trees.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">What is a programming consult? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Thirty minutes with Priya. She looks at your training history, your goals, and your schedule. You walk out with a written twelve week plan. Unlimited members get one free per year. Non members can book one for 75 dollars.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Do you offer personal training? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Yes. Small group and one on one. Ask at the front desk for current coach availability.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Is there a student discount? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Twenty five dollars off Monthly or Unlimited with valid UT Austin student ID, every month you are enrolled.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Can I freeze my membership? <span class="faq__toggle" aria-hidden="true"></span></summary>
+        <p class="faq__a">Yes, up to two months per year. Travel, injury, whatever. Email us two weeks ahead if possible.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <p class="cta__kicker">Still reading?</p>
+    <h2 class="cta__heading">You already decided. Book the drop in.</h2>
+    <a href="contact.html" class="btn btn--paper">Book a Drop In <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <span class="foot__mark">Iron<span class="slash">/</span>Ember</span>
+      <p>A no-nonsense strength and conditioning gym on East 7th. Open seven days most weeks, except Sundays which are for leaving you alone.</p>
+    </div>
+    <div class="foot__col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h4>Visit</h4>
+      <ul>
+        <li>2407 E 7th St</li>
+        <li>Austin, TX 78702</li>
+        <li><a href="tel:+15125551247">(512) 555-1247</a></li>
+        <li><a href="mailto:info@ironandember.com">info@ironandember.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col foot__newsletter">
+      <h4>Lift Notes</h4>
+      <form action="mailto:info@ironandember.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>&copy; 2026 Iron &amp; Ember Fitness</span>
+    <span>Site by <a href="https://neonframewebdev.com" target="_blank" rel="noopener">NeonFrame</a></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/"},
+    {"@type": "ListItem", "position": 2, "name": "Membership", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/membership.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How do I do a drop in?", "acceptedAnswer": {"@type": "Answer", "text": "Call us, email us, or show up ten minutes before any coached session. First time drop ins fill out a one page waiver. Twenty five bucks, cash or card."}},
+    {"@type": "Question", "name": "Do I need experience?", "acceptedAnswer": {"@type": "Answer", "text": "No. Coaches teach every movement before you load the bar."}},
+    {"@type": "Question", "name": "Can I cancel my membership?", "acceptedAnswer": {"@type": "Answer", "text": "Anytime, end of your current month. No cancellation fee."}},
+    {"@type": "Question", "name": "What is a programming consult?", "acceptedAnswer": {"@type": "Answer", "text": "Thirty minutes with our programming coach. Your history, goals, and schedule turn into a written twelve week plan."}},
+    {"@type": "Question", "name": "Do you offer personal training?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Small group and one on one. Ask at the front desk for current coach availability."}},
+    {"@type": "Question", "name": "Is there a student discount?", "acceptedAnswer": {"@type": "Answer", "text": "Twenty five dollars off Monthly or Unlimited with valid UT Austin student ID."}},
+    {"@type": "Question", "name": "Can I freeze my membership?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, up to two months per year."}}
+  ]
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

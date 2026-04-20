@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Contact, Iron &amp; Ember Fitness, Austin TX</title>
+<meta name="description" content="Call, email, or drop in. 2407 E 7th Street in East Austin. Open seven days a week except Sundays.">
+<link rel="canonical" href="https://neonframewebdev.github.io/iron-and-ember-fitness/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact, Iron &amp; Ember Fitness">
+<meta property="og:description" content="2407 E 7th Street. Call (512) 555-1247 or email info@ironandember.com.">
+<meta property="og:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta property="og:url" content="https://neonframewebdev.github.io/iron-and-ember-fitness/contact.html">
+<meta property="og:site_name" content="Iron &amp; Ember Fitness">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-contact">
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">Iron<span class="slash">/</span>Ember</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <div class="menu__inner">
+    <ul class="menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html" class="is-active">Contact</a></li>
+    </ul>
+    <div class="menu__contact">
+      <p class="menu__meta"><strong>Address</strong>2407 E 7th St<br>Austin, TX 78702</p>
+      <p class="menu__meta"><strong>Hours</strong>Mon to Fri, 5 AM to 9 PM<br>Sat, 7 AM to 2 PM<br>Sun, closed</p>
+      <p class="menu__meta"><strong>Phone</strong><a href="tel:+15125551247">(512) 555-1247</a></p>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+
+<header class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="images/moment-04.webp" alt="" width="1800" height="1200" fetchpriority="high">
+  </div>
+  <div class="page-hero__inner">
+    <nav class="page-hero__crumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span>Contact</span>
+    </nav>
+    <h1 class="page-hero__heading">Come <span class="ember">train.</span></h1>
+    <p class="page-hero__sub">Book a drop in, ask about a cycle, or just show up. We open at 5 AM on weekdays.</p>
+  </div>
+</header>
+
+<section class="section section--ink">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-info__block">
+          <p class="contact-info__label">Location</p>
+          <p class="contact-info__value">2407 E 7th St<br>Austin, TX 78702</p>
+        </div>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Phone</p>
+          <p class="contact-info__value"><a href="tel:+15125551247">(512) 555-1247</a></p>
+        </div>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Email</p>
+          <p class="contact-info__value"><a href="mailto:info@ironandember.com">info@ironandember.com</a></p>
+        </div>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Hours</p>
+          <table class="hours-table">
+            <tbody>
+              <tr><td>Mon to Fri</td><td>5:00 AM to 9:00 PM</td></tr>
+              <tr><td>Saturday</td><td>7:00 AM to 2:00 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="contact-info__block contact-info__text">
+          <p class="contact-info__label">Drop In Note</p>
+          <p>First time drop ins fill out a one page waiver at the door. Come ten minutes before any posted session. Twenty five bucks, cash or card.</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" aria-label="Contact form">
+        <div class="contact-form__row">
+          <div class="field">
+            <input type="text" id="cf-name" name="name" placeholder=" " required autocomplete="name">
+            <label for="cf-name">Name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="cf-email" name="email" placeholder=" " required autocomplete="email">
+            <label for="cf-email">Email</label>
+          </div>
+        </div>
+        <div class="field">
+          <select id="cf-subject" name="subject">
+            <option value="dropin">Drop in inquiry</option>
+            <option value="membership">Membership</option>
+            <option value="programming">Programming consult</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="cf-subject">Subject</label>
+        </div>
+        <div class="field">
+          <textarea id="cf-message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="cf-message">Message</label>
+        </div>
+        <button type="submit" class="btn btn--ember btn--block">Send Message <span class="btn__arrow" aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="map" aria-label="Map of Iron and Ember Fitness">
+  <iframe
+    src="https://www.google.com/maps?q=2407+E+7th+St+Austin+TX&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Map to Iron &amp; Ember Fitness"></iframe>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <span class="foot__mark">Iron<span class="slash">/</span>Ember</span>
+      <p>A no-nonsense strength and conditioning gym on East 7th. Open seven days most weeks, except Sundays which are for leaving you alone.</p>
+    </div>
+    <div class="foot__col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h4>Visit</h4>
+      <ul>
+        <li>2407 E 7th St</li>
+        <li>Austin, TX 78702</li>
+        <li><a href="tel:+15125551247">(512) 555-1247</a></li>
+        <li><a href="mailto:info@ironandember.com">info@ironandember.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col foot__newsletter">
+      <h4>Lift Notes</h4>
+      <form action="mailto:info@ironandember.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>&copy; 2026 Iron &amp; Ember Fitness</span>
+    <span>Site by <a href="https://neonframewebdev.com" target="_blank" rel="noopener">NeonFrame</a></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/"},
+    {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/contact.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HealthClub"],
+  "name": "Iron & Ember Fitness",
+  "url": "https://neonframewebdev.github.io/iron-and-ember-fitness/",
+  "telephone": "+1-512-555-1247",
+  "email": "info@ironandember.com",
+  "address": {"@type": "PostalAddress", "streetAddress": "2407 E 7th St", "addressLocality": "Austin", "addressRegion": "TX", "postalCode": "78702", "addressCountry": "US"},
+  "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+1-512-555-1247", "email": "info@ironandember.com", "areaServed": "US"}
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

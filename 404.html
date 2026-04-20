@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>404, Iron &amp; Ember Fitness</title>
+<meta name="description" content="Page not found. Return home or check the programs, coaches, membership, or contact pages.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-404">
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">Iron<span class="slash">/</span>Ember</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <div class="menu__inner">
+    <ul class="menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu__contact">
+      <p class="menu__meta"><strong>Address</strong>2407 E 7th St<br>Austin, TX 78702</p>
+      <p class="menu__meta"><strong>Phone</strong><a href="tel:+15125551247">(512) 555-1247</a></p>
+    </div>
+  </div>
+</aside>
+
+<main class="nf">
+  <p class="nf__code">Error 404 / Not Found</p>
+  <h1 class="nf__heading">Benched.</h1>
+  <p class="nf__sub">The page you are looking for is not on the rack. Head back to the floor.</p>
+  <div class="hero__ctas" style="justify-content:center;">
+    <a href="index.html" class="btn btn--ember">Home <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    <a href="programs.html" class="btn btn--outline">Programs</a>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <span class="foot__mark">Iron<span class="slash">/</span>Ember</span>
+      <p>A no-nonsense strength and conditioning gym on East 7th.</p>
+    </div>
+    <div class="foot__col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h4>Visit</h4>
+      <ul>
+        <li>2407 E 7th St</li>
+        <li>Austin, TX 78702</li>
+        <li><a href="tel:+15125551247">(512) 555-1247</a></li>
+        <li><a href="mailto:info@ironandember.com">info@ironandember.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col foot__newsletter">
+      <h4>Lift Notes</h4>
+      <form action="mailto:info@ironandember.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>&copy; 2026 Iron &amp; Ember Fitness</span>
+    <span>Site by <a href="https://neonframewebdev.com" target="_blank" rel="noopener">NeonFrame</a></span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Programs, Iron &amp; Ember Fitness, Austin TX</title>
+<meta name="description" content="Powerlifting, Olympic lifting, functional fitness, open gym. Every session is coached and every cycle is programmed. See the weekly schedule.">
+<link rel="canonical" href="https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Programs, Iron &amp; Ember Fitness">
+<meta property="og:description" content="Four programs, one gym. Powerlifting, Olympic lifting, functional fitness, open gym.">
+<meta property="og:image" content="https://neonframewebdev.github.io/iron-and-ember-fitness/og-image.jpg">
+<meta property="og:url" content="https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html">
+<meta property="og:site_name" content="Iron &amp; Ember Fitness">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-programs">
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">Iron<span class="slash">/</span>Ember</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <div class="menu__inner">
+    <ul class="menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html" class="is-active">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu__contact">
+      <p class="menu__meta"><strong>Address</strong>2407 E 7th St<br>Austin, TX 78702</p>
+      <p class="menu__meta"><strong>Hours</strong>Mon to Fri, 5 AM to 9 PM<br>Sat, 7 AM to 2 PM<br>Sun, closed</p>
+      <p class="menu__meta"><strong>Phone</strong><a href="tel:+15125551247">(512) 555-1247</a></p>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+
+<header class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="images/program-powerlifting.webp" alt="" width="1800" height="1050" fetchpriority="high">
+  </div>
+  <div class="page-hero__inner">
+    <nav class="page-hero__crumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span>Programs</span>
+    </nav>
+    <h1 class="page-hero__heading">Train what <span class="ember">matters.</span></h1>
+    <p class="page-hero__sub">Four lanes. Pick one, mix them, rotate by cycle. Every session is coached. Every cycle is written down. Your progress is tracked.</p>
+  </div>
+</header>
+
+<section class="programs-pinned">
+  <div class="programs-pinned__media">
+    <img src="images/program-powerlifting.webp" alt="Barbell squat in the powerlifting area" data-program="powerlifting" width="1400" height="1750" loading="lazy" decoding="async">
+    <img src="images/program-olympic.webp" alt="Olympic weightlifting clean and jerk" data-program="olympic" width="1400" height="1750" loading="lazy" decoding="async">
+    <img src="images/program-functional.webp" alt="Kettlebell functional fitness work" data-program="functional" width="1400" height="1750" loading="lazy" decoding="async">
+    <img src="images/program-open-gym.webp" alt="Empty weightlifting platform with plates and dumbbells" data-program="open" width="1400" height="1750" loading="lazy" decoding="async">
+  </div>
+  <div class="programs-pinned__content">
+    <article class="programs-pinned__block" id="powerlifting" data-program="powerlifting">
+      <p class="programs-pinned__block__eyebrow">Program 01</p>
+      <h2 class="programs-pinned__block__name">Powerlifting</h2>
+      <p class="programs-pinned__block__desc">Twelve week periodized cycles built around squat, bench, and deadlift. Linear progression for new lifters, block periodization for experienced ones, meet peaking blocks twice a year.</p>
+      <div class="programs-pinned__block__list">
+        <span>Squat</span><span>Bench</span><span>Deadlift</span><span>Accessories</span><span>Meet prep</span>
+      </div>
+      <p class="programs-pinned__block__schedule">Tuesday and Thursday, 6 AM and 5:30 PM</p>
+    </article>
+    <article class="programs-pinned__block" id="olympic" data-program="olympic">
+      <p class="programs-pinned__block__eyebrow">Program 02</p>
+      <h2 class="programs-pinned__block__name">Olympic Lifting</h2>
+      <p class="programs-pinned__block__desc">Snatch and clean and jerk, taught the long way. We drill position before we load the bar. Coach Ren is USAW Level 2 and used to competing.</p>
+      <div class="programs-pinned__block__list">
+        <span>Snatch</span><span>Clean</span><span>Jerk</span><span>Pulls</span><span>Balance</span>
+      </div>
+      <p class="programs-pinned__block__schedule">Monday, Wednesday, Friday, 7 AM</p>
+    </article>
+    <article class="programs-pinned__block" id="functional" data-program="functional">
+      <p class="programs-pinned__block__eyebrow">Program 03</p>
+      <h2 class="programs-pinned__block__name">Functional Fitness</h2>
+      <p class="programs-pinned__block__desc">Forty five minute conditioning circuits. Kettlebells, battle ropes, sleds, bodyweight. Programmed for the room, scalable for the day you had.</p>
+      <div class="programs-pinned__block__list">
+        <span>Kettlebell</span><span>Bodyweight</span><span>Conditioning</span><span>Sled</span>
+      </div>
+      <p class="programs-pinned__block__schedule">Monday to Friday, 6:30 AM, 12 PM, 5 PM</p>
+    </article>
+    <article class="programs-pinned__block" id="open" data-program="open">
+      <p class="programs-pinned__block__eyebrow">Program 04</p>
+      <h2 class="programs-pinned__block__name">Open Gym</h2>
+      <p class="programs-pinned__block__desc">Full access to racks, platforms, dumbbells to 150, plates to plenty. Bring your own programming or grab one of ours. Open every hour we are.</p>
+      <div class="programs-pinned__block__list">
+        <span>All equipment</span><span>Free weights</span><span>Platforms</span><span>Self coached</span>
+      </div>
+      <p class="programs-pinned__block__schedule">All operating hours</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section--ink" id="schedule">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div>
+        <span class="section-head__label">Weekly / At a glance</span>
+        <h2 class="section__heading" data-split>The <span class="ember">schedule.</span></h2>
+      </div>
+      <p class="section__intro">Coach-led sessions run Monday to Saturday. Open gym fills the rest of the operating hours.</p>
+    </div>
+    <div class="schedule rise" role="table" aria-label="Weekly schedule">
+      <div class="schedule__cell schedule__cell--head">Time</div>
+      <div class="schedule__cell schedule__cell--head">Mon</div>
+      <div class="schedule__cell schedule__cell--head">Tue</div>
+      <div class="schedule__cell schedule__cell--head">Wed</div>
+      <div class="schedule__cell schedule__cell--head">Thu</div>
+      <div class="schedule__cell schedule__cell--head">Fri</div>
+      <div class="schedule__cell schedule__cell--head">Sat</div>
+      <div class="schedule__cell schedule__cell--head">Sun</div>
+
+      <div class="schedule__cell schedule__cell--time">5 AM</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+
+      <div class="schedule__cell schedule__cell--time">6 AM</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--pl">Powerlift</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--pl">Powerlift</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+
+      <div class="schedule__cell schedule__cell--time">7 AM</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--oly">Olympic</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--oly">Olympic</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--oly">Olympic</div>
+      <div class="schedule__cell schedule__cell--og">Open</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+
+      <div class="schedule__cell schedule__cell--time">12 PM</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--og">Open</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+
+      <div class="schedule__cell schedule__cell--time">5 PM</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--fnc">Functional</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+
+      <div class="schedule__cell schedule__cell--time">5:30 PM</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--pl">Powerlift</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--ev schedule__cell--pl">Powerlift</div>
+      <div class="schedule__cell">Open</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+      <div class="schedule__cell schedule__cell--og">Closed</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <p class="cta__kicker">Next Step</p>
+    <h2 class="cta__heading">Book a drop in, pick a program.</h2>
+    <p class="cta__sub">Twenty five bucks, one full session, no commitment. Come train, see the room, meet a coach.</p>
+    <a href="contact.html" class="btn btn--paper">Book a Drop In <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <span class="foot__mark">Iron<span class="slash">/</span>Ember</span>
+      <p>A no-nonsense strength and conditioning gym on East 7th. Open seven days most weeks, except Sundays which are for leaving you alone.</p>
+    </div>
+    <div class="foot__col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h4>Visit</h4>
+      <ul>
+        <li>2407 E 7th St</li>
+        <li>Austin, TX 78702</li>
+        <li><a href="tel:+15125551247">(512) 555-1247</a></li>
+        <li><a href="mailto:info@ironandember.com">info@ironandember.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col foot__newsletter">
+      <h4>Lift Notes</h4>
+      <form action="mailto:info@ironandember.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>&copy; 2026 Iron &amp; Ember Fitness</span>
+    <span>Site by <a href="https://neonframewebdev.com" target="_blank" rel="noopener">NeonFrame</a></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/"},
+    {"@type": "ListItem", "position": 2, "name": "Programs", "item": "https://neonframewebdev.github.io/iron-and-ember-fitness/programs.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HealthClub"],
+  "@id": "https://neonframewebdev.github.io/iron-and-ember-fitness/#business",
+  "name": "Iron & Ember Fitness",
+  "url": "https://neonframewebdev.github.io/iron-and-ember-fitness/",
+  "telephone": "+1-512-555-1247",
+  "address": {"@type": "PostalAddress", "streetAddress": "2407 E 7th St", "addressLocality": "Austin", "addressRegion": "TX", "postalCode": "78702", "addressCountry": "US"}
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
