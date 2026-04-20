@@ -435,28 +435,34 @@ ul, ol { list-style: none; }
 .manifesto__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(0.25) contrast(1.06); }
 .manifesto__photo__tag { position: absolute; bottom: 1rem; left: 1rem; color: var(--paper); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase; background: rgba(10,10,10,0.72); padding: 0.5rem 0.75rem; }
 
-/* ---------- Horizontal moments ---------- */
+/* ---------- Horizontal moments, native scroll ---------- */
 .moments {
   background: var(--ink);
-  overflow: hidden;
   position: relative;
+  padding: clamp(3rem, 6vw, 5rem) 0;
 }
 .moments__pin {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
 }
 .moments__track {
   display: flex;
   gap: clamp(1rem, 2vw, 1.75rem);
   padding: 0 var(--gutter);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ember) var(--ink);
+  -webkit-overflow-scrolling: touch;
 }
+.moments__track::-webkit-scrollbar { height: 4px; }
+.moments__track::-webkit-scrollbar-track { background: var(--ink); }
+.moments__track::-webkit-scrollbar-thumb { background: var(--ember); }
 .moment {
   position: relative;
-  flex: 0 0 70vw;
-  max-width: 900px;
+  flex: 0 0 min(440px, 78vw);
   aspect-ratio: 3 / 4;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 .moment img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.2) contrast(1.05); transform: scale(1.04); transition: transform 0.6s var(--ease-out); }
 .moment:hover img { transform: scale(1); }

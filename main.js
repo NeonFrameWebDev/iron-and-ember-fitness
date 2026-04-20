@@ -6,30 +6,10 @@
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hasGSAP = typeof window.gsap !== 'undefined';
   var hasScrollTrigger = typeof window.ScrollTrigger !== 'undefined';
-  var hasLenis = typeof window.Lenis !== 'undefined';
 
   /* ----- helpers ----- */
   function $(q, scope) { return (scope || document).querySelector(q); }
   function $$(q, scope) { return Array.from((scope || document).querySelectorAll(q)); }
-
-  /* ----- Lenis smooth scroll ----- */
-  var lenis = null;
-  if (hasLenis && !reduceMotion) {
-    lenis = new Lenis({
-      duration: 1.2,
-      easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
-      smoothWheel: true,
-      smoothTouch: false,
-      touchMultiplier: 1.5
-    });
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
-    if (hasGSAP && hasScrollTrigger) {
-      lenis.on('scroll', ScrollTrigger.update);
-      gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
-      gsap.ticker.lagSmoothing(0);
-    }
-  }
 
   if (hasGSAP && hasScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
@@ -39,19 +19,24 @@
      Intro loader (first visit only)
      ===================================== */
   var loader = document.getElementById('loader');
+  function finishLoader() {
+    if (loader) {
+      loader.classList.add('is-done');
+      setTimeout(function () { if (loader && loader.parentNode) loader.remove(); }, 900);
+    }
+    document.body.classList.remove('is-locked');
+  }
+
   if (loader) {
     var alreadySeen = sessionStorage.getItem('ie_seen') === '1';
     if (alreadySeen || reduceMotion) {
-      loader.classList.add('is-done');
-      setTimeout(function () { loader.remove(); }, 600);
-      document.body.classList.remove('is-locked');
+      finishLoader();
       kickHero();
     } else {
       sessionStorage.setItem('ie_seen', '1');
       document.body.classList.add('is-locked');
       var bar = loader.querySelector('.loader__bar');
       var count = loader.querySelector('.loader__count');
-      var mark = loader.querySelector('.loader__mark');
       setTimeout(function () { loader.classList.add('is-ready'); }, 80);
       var n = 0;
       var target = 100;
@@ -63,16 +48,15 @@
         if (n >= target) {
           clearInterval(interval);
           setTimeout(function () {
-            loader.classList.add('is-done');
-            document.body.classList.remove('is-locked');
+            finishLoader();
             kickHero();
-            setTimeout(function () { loader.remove(); }, 900);
           }, 380);
         }
       }, 48);
+      // hard safety timeout
+      setTimeout(finishLoader, 5000);
     }
   } else {
-    document.body.classList.remove('is-locked');
     kickHero();
   }
 
@@ -159,7 +143,7 @@
   });
 
   /* =====================================
-     Smooth anchor scroll (works with Lenis)
+     Native smooth anchor scroll
      ===================================== */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
@@ -169,12 +153,8 @@
       if (!target) return;
       e.preventDefault();
       var offset = 80;
-      if (lenis) {
-        lenis.scrollTo(target, { offset: -offset, duration: 1.1 });
-      } else {
-        var y = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
+      var y = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     });
   });
 
@@ -236,30 +216,7 @@
     kids.forEach(function (k) { track.appendChild(k.cloneNode(true)); });
   });
 
-  /* =====================================
-     Horizontal pinned moments (home)
-     ===================================== */
-  if (hasGSAP && hasScrollTrigger && !reduceMotion && window.innerWidth > 900) {
-    var momentsTrack = $('.moments__track');
-    var momentsPin = $('.moments__pin');
-    if (momentsTrack && momentsPin) {
-      var scrollWidth = momentsTrack.scrollWidth - window.innerWidth;
-      if (scrollWidth > 0) {
-        gsap.to(momentsTrack, {
-          x: -scrollWidth,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: momentsPin,
-            start: 'top top',
-            end: function () { return '+=' + scrollWidth; },
-            pin: true,
-            scrub: 1,
-            invalidateOnRefresh: true
-          }
-        });
-      }
-    }
-  }
+  /* Moments row is horizontally scrollable natively via overflow-x: auto */
 
   /* =====================================
      Programs pinned image swap
